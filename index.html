@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Singlish Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Sinhala fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Singlish to Sinhala Converter</h1>
+        
+        <!-- Input Section -->
+        <div class="input-section">
+            <textarea id="singlishInput" placeholder="Type Singlish here..."></textarea>
+            <button id="voiceBtn">🎤 Start Voice Input</button>
+        </div>
+
+        <!-- Output Format Selector -->
+        <div class="format-selector">
+            <select id="fontSelector">
+                <option value="unicode">Unicode (Noto Sinhala)</option>
+                <option value="FMAbaya">FM Abaya</option>
+                <option value="ISIFont">ISI Font</option>
+            </select>
+        </div>
+
+        <!-- Output Section -->
+        <div class="output-section">
+            <div id="output" class="output-box"></div>
+            <button id="copyBtn">Copy Text</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
